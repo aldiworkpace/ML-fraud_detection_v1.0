@@ -13,7 +13,7 @@ st.write("Enter transactions in the left sidebar for analysis.")
 st.divider()
 
 try:
-    model = joblib.load('deteksi_fraud.pkl')
+    model = joblib.load('fraud_prediction/deteksi_fraud.pkl')
     st.success("Model loaded successfully!")
 except FileNotFoundError:
     st.error("File not found, please try again")
